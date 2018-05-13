@@ -7,6 +7,7 @@ import org.hibernate.validator.constraints.br.CPF;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
+
 /**
  * Created by Marco Antônio on 04/05/2018
  */

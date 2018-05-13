@@ -3,6 +3,7 @@ package com.marcooliveira.pontointeligente.api.utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Component;
 
 /**
  * Created by Marco Antônio on 03/05/2018

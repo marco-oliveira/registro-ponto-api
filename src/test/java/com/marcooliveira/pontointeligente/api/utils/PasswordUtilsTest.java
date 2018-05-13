@@ -20,6 +20,7 @@ public class PasswordUtilsTest {
         assertNull(PassowordUtils.geraBCrypt(null));
     }
 
+    @Test
     public void testGerarHashSenha() throws Exception{
 
         String hash = PassowordUtils.geraBCrypt(SENHA);

@@ -1,6 +1,7 @@
 package com.marcooliveira.pontointeligente.api.dtos;
 
-import javax.validation.constraints.NotEmpty;
+
+import org.hibernate.validator.constraints.NotEmpty;
 import java.util.Optional;
 
 /**
