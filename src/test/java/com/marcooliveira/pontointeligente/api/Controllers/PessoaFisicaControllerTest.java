@@ -1,5 +1,6 @@
 package com.marcooliveira.pontointeligente.api.Controllers;
 
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -70,7 +71,8 @@ public class PessoaFisicaControllerTest {
                 .content(this.obterJsonRequisicaoPost())
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().is4xxClientError());
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.errors").value("Empresa não Cadastrada."));
     }
 
     private String obterJsonRequisicaoPost() throws JsonProcessingException {
